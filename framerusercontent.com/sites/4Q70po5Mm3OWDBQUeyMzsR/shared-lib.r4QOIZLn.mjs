@@ -4114,7 +4114,7 @@ var bn,
                                   Mv16WKTEe: `Coming Soon`,
                                   NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
                                   r9wjJW8ZN: !1,
-                                  style: { height: `100%` },
+                                  style: { height: `100%`, cursor : 'not-allowed' },
                                   variant: `symjmldSc`,
                                   width: `100%`,
                                   XiCzUhcM5: !1,
@@ -4278,7 +4278,7 @@ var bn,
         `.framer-BtO5q .framer-1woe2r0 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 28px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 100px; }`,
         `.framer-BtO5q .framer-1xzqgzt { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 30px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 105px; }`,
         `.framer-BtO5q .framer-1ni7j8s { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 100%; justify-content: center; overflow: visible; padding: 0px; position: relative; width: min-content; }`,
-        `.framer-BtO5q .framer-fpbs8u-container, .framer-BtO5q .framer-10hck1u-container, .framer-BtO5q .framer-7572t-container, .framer-BtO5q .framer-1derri5-container { flex: none; height: 28px; position: relative; width: auto; cursor: not-allowed;}`,
+        `.framer-BtO5q .framer-fpbs8u-container, .framer-BtO5q .framer-10hck1u-container, .framer-BtO5q .framer-7572t-container, .framer-BtO5q .framer-1derri5-container { flex: none; height: 28px; position: relative; width: auto; }`,
         `.framer-BtO5q .framer-112u9ki { align-content: center; align-items: center; display: flex; flex: 1 0 0px; flex-direction: row; flex-wrap: nowrap; gap: 8px; height: 100%; justify-content: flex-end; overflow: visible; padding: 0px 100px 0px 0px; position: relative; width: 1px; }`,
         `.framer-BtO5q .framer-1gfcht1 { align-content: center; align-items: center; aspect-ratio: 1 / 1; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: var(--framer-aspect-ratio-supported, 56px); justify-content: center; overflow: visible; padding: 0px; position: relative; width: 56px; }`,
         `.framer-BtO5q .framer-kyccc7-container { flex: none; height: 24px; pointer-events: none; position: relative; width: 24px; }`,
@@ -5471,7 +5471,7 @@ var fr,
                                       verticalAlignment: `top`,
                                       withExternalLayout: !0,
                                     }),
-
+                                   
                                     s(D, {
                                       __fromCanvasComponent: !0,
                                       children: s(h, {
@@ -5506,7 +5506,7 @@ var fr,
                                     }),
                                   ],
                                 }),
-
+                                
                                 f(b.div, {
                                   className: `framer-it8err`,
                                   "data-framer-name": `Legal`,
