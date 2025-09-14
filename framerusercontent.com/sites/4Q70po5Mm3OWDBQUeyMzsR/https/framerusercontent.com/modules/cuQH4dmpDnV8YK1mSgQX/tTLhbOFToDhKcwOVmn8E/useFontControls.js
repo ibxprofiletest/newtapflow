@@ -2,7 +2,7 @@
 import { fontStore } from "framer";
 import { useEffect } from "react";
 // @ts-ignore
-import { fontStack } from "https://framerusercontent.com/modules/VTUDdizacRHpwbkOamr7/AykinQJbgwl92LvMGZwu/constants.js";
+import { fontStack } from "framerusercontent.com/modules/VTUDdizacRHpwbkOamr7/AykinQJbgwl92LvMGZwu/constants.js";
 const fontWeights = {
     100: "Thin",
     200: "Extra-light",

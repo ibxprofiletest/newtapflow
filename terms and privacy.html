@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of service | Tapflow</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://framerusercontent.com/images/WGcSfufeSAF5YUmMIQDthxsT8.png"
+      rel="icon"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      href="https://framerusercontent.com/images/WGcSfufeSAF5YUmMIQDthxsT8.png"
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+    />
+    <style>
+      body {
+        background: #111;
+        color: #fff;
+        font-family: "Montserrat", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 48px 0 48px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+      .logo-icon {
+        font-size: 1.5rem;
+        margin-right: 8px;
+        width: 100px;
+        height: 28px;
+      }
+      .header-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .header-right a,
+      .header-right button {
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        font-family: inherit;
+        padding: 6px 18px;
+        border-radius: 20px;
+        transition: background 0.2s;
+      }
+      .header-right button {
+        background: #fff;
+        color: #111;
+        font-weight: 600;
+      }
+      .header-right button:hover {
+        background: #222;
+        color: #fff;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 24px 24px 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+      }
+      .sidebar {
+        min-width: 180px;
+        margin-top: 60px;
+        position: sticky;
+        top: 40px;
+        align-self: flex-start;
+        z-index: 2;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar li {
+        margin-bottom: 10px;
+        color: #888;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: color 0.2s, font-weight 0.2s;
+        font-weight: 400;
+      }
+      .sidebar li a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 2px 0;
+        transition: color 0.2s;
+      }
+      .sidebar li:hover,
+      .sidebar li:focus-within {
+        color: #ddd;
+      }
+      .sidebar li.active {
+        color: #fff;
+        font-weight: 700;
+      }
+      .main-content {
+        flex: 1;
+        margin-top: 20px;
+      }
+      .legal {
+        text-align: center;
+        color: #aaa;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+      }
+      .title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin: 0 0 18px 0;
+        letter-spacing: -2px;
+        text-align: center;
+      }
+      .last-updated {
+        color: #aaa;
+        font-size: 1rem;
+        margin-bottom: 18px;
+        text-align: left;
+      }
+      .section-title {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin: 32px 0 10px 0;
+      }
+      .main-content a {
+        color: #b3b3ff;
+        text-decoration: underline;
+      }
+      .main-content p {
+        color: #ddd;
+        font-size: 1.08rem;
+        line-height: 1.7;
+        margin: 0 0 18px 0;
+      }
+      @media (max-width: 900px) {
+        .container {
+          flex-direction: column;
+          gap: 0;
+        }
+        .sidebar {
+          margin-top: 0;
+          margin-bottom: 24px;
+        }
+      }
+      @media (max-width: 600px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 18px 12px 0 12px;
+        }
+        .container {
+          padding: 18px 6px 12px 6px;
+        }
+        .title {
+          font-size: 2.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          class="logo-icon"
+          src="https://framerusercontent.com/images/mPPPnx1TYlZGvAQgOxDyFbr7Aew.png?scale-down-to=512"
+          alt=""
+
+        />
+      </div>
+      <!-- <div class="header-right">
+        <a href="#">Log in</a>
+        <button>Claim invite</button>
+      </div> -->
+    </div>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li class="active">
+            <a href="#terms" onclick="setActive(this)">Terms of service</a>
+          </li>
+          <li>
+            <a href="#privacy" onclick="setActive(this)">Privacy statement</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main-content">
+        <div class="legal">Legal</div>
+        <div id="terms" class="title">Terms of service</div>
+        <div class="section-title">Terms &amp; Conditions of Tapflow</div>
+        <p>
+          <a href="#">Tapflow</a> provide their services to you subject to the
+          following conditions. If you visit or purchase services from
+          <a href="#">Tapflow</a>, you accept these conditions.
+        </p>
+        <div class="section-title">1. Using this website</div>
+        <p>
+          Your use of this website is subject to your irrevocable acceptance
+          without modification of these terms of use (the “Terms”) and you agree
+          to use this website in accordance with and subject to these Terms. The
+          Terms as set out hereunder constitute the entire agreement between you
+          and <a href="#">Tapflow</a>. If you do not read or accept these Terms,
+          do not use this website. By accessing any part of the
+          <a href="#">Tapflow</a> website, you consent to be bound by these
+          Terms.
+        </p>
+        <div class="section-title">
+          2. Disclaimer of Warranties and Limitations of Liability
+        </div>
+        <p>
+          <a href="#">Tapflow</a> and its contractors attempt to be as accurate
+          as possible. However, <a href="#">Tapflow</a> does not warrant that
+          product or service descriptions, other content of this site, or its
+          services performed for its customers are accurate, complete, reliable,
+          current, or error-free. <a href="#">Tapflow</a> reserves the right to
+          change the services available through the site and their prices
+          without any notice or liability. This site and
+          <a href="#">Tapflow</a>' services are provided by
+          <a href="#">Tapflow</a> on an "as is" and "as available" basis and at
+          your sole risk. To the fullest extent permissible pursuant to
+          applicable law, <a href="#">Tapflow</a> disclaims all warranties and
+          conditions, expressed or implied, in respect of its services and any
+          information, content, or materials on this site, including any implied
+          warranties or conditions of fitness for a particular purpose,
+          merchantability, and non-infringement.
+        </p>
+        <p>
+          <a href="#">Tapflow</a>, in its website, including without limitation
+          banners, graphics, and links pages, may provide links and pointers to
+          Internet sites maintained by third parties.
+          <a href="#">Tapflow</a> does not operate, or control in any respect,
+          any information, products, or services on these third-party sites.
+        </p>
+        <p>
+          In no event is <a href="#">Tapflow</a>, its employees, independent
+          contractors, subsidiary and parent companies, affiliates, or any third
+          parties mentioned on the site liable for any damages whatsoever
+          (including, without limitation, direct, incidental, or consequential
+          damages, lost profits, or damages resulting from lost data, breach of
+          confidentiality, or business interruption) resulting from the
+          performance of <a href="#">Tapflow</a>' services, the use or inability
+          to use the <a href="#">Tapflow</a> site or the material contained on
+          the site, whether based on warranty, contract, tort, negligence,
+          strict liability, operation of law, or any other legal theory, whether
+          or not <a href="#">Tapflow</a> is advised of the possibility of such
+          damages.
+        </p>
+        <p>
+          In no event is <a href="#">Tapflow</a> liable for damages in excess of
+          the amount paid by a customer for the service in question.
+          <a href="#">Tapflow</a> has set its prices and created this site in
+          reliance on the limitations of liability and disclaimers of warranties
+          and damages set forth herein, and the same form a fundamental and
+          essential basis of the bargain between the parties. They shall apply
+          even if the contract between you and <a href="#">Tapflow</a> is found
+          to have failed in its fundamental or essential purpose or has been
+          fundamentally breached.
+        </p>
+
+        <div
+          id="privacy"
+          class="title"
+          style="margin-top: 80px; font-size: 2.2rem"
+        >
+          Privacy statement
+        </div>
+        <div class="section-title">Our Commitment to Privacy</div>
+        <p>This Application collects some Personal Data from its Users.</p>
+
+        <div class="section-title">Types of Data collected</div>
+        <p>
+          Among the types of Personal Data that this Application collects, by
+          itself or through third parties, there are: Cookies; Usage Data; email
+          address.
+        </p>
+        <p>
+          Personal Data may be freely provided by the User, or, in case of Usage
+          Data, collected automatically when using this Application.
+        </p>
+
+        <p>
+          Unless specified otherwise, all Data requested by this Application is
+          mandatory and failure to provide this Data may make it impossible for
+          this Application to provide its services. In cases where this
+          Application specifically states that some Data is not mandatory, Users
+          are free not to communicate this Data without consequences to the
+          availability or the functioning of the Service.
+        </p>
+
+        <p>
+          Users who are uncertain about which Personal Data is mandatory are
+          welcome to contact the Owner.
+        </p>
+        <p>
+          Any use of Cookies – or of other tracking tools – by this Application
+          or by the owners of third-party services used by this Application
+          serves the purpose of providing the Service required by the User, in
+          addition to any other purposes described in the present document and
+          in the Cookie Policy, if available.
+        </p>
+
+        <div class="section-title">User</div>
+
+        <p>
+          The individual using this Application who, unless otherwise specified,
+          coincides with the Data Subject.
+        </p>
+
+        <div class="section-title">Data Processor (or Data Supervisor)</div>
+
+        <p>
+          The natural or legal person, public authority, agency or other body
+          which processes Personal Data on behalf of the Controller, as
+          described in this privacy policy.
+        </p>
+        <div class="section-title">This Application</div>
+
+        <p>
+          The means by which the Personal Data of the User is collected and
+          processed.
+        </p>
+        <div class="section-title">Service</div>
+
+        <p>
+          The service provided by this Application as described in the relative
+          terms (if available) and on this site/application.
+        </p>
+        <div class="section-title">European Union (or EU)</div>
+
+        <p>
+          Unless otherwise specified, all references made within this document
+          to the European Union include all current member states to the
+          European Union and the European Economic Area.
+        </p>
+
+        <div class="section-title">Cookie policy</div>
+        <div class="section-title">How We Use Cookies</div>
+        <p>
+          This is a placeholder for the cookie policy. Replace this with your
+          actual cookie policy content.
+        </p>
+
+        <div class="section-title">Security</div>
+        <div class="section-title">Security Practices</div>
+        <p>
+          This is a placeholder for the security section. Replace this with your
+          actual security information.
+        </p>
+      </main>
+      <script>
+        // Sidebar active state
+        function setActive(link) {
+          const items = document.querySelectorAll(".sidebar li");
+          items.forEach((li) => li.classList.remove("active"));
+          link.parentElement.classList.add("active");
+        }
+        // Optional: Smooth scroll for anchor links
+        document.querySelectorAll(".sidebar a").forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href").slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+              e.preventDefault();
+              window.scrollTo({
+                top: target.getBoundingClientRect().top + window.scrollY - 30,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
