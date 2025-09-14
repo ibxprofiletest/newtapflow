@@ -4109,7 +4109,7 @@ var bn,
                                 children: s(Z, {
                                   height: `100%`,
                                   id: `zOcXcQqG7`,
-                                  Kr62I1Ee9: `tapflow.co/auth/invite`,
+                                  Kr62I1Ee9: ``,
                                   layoutId: `zOcXcQqG7`,
                                   Mv16WKTEe: `Coming Soon`,
                                   NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
