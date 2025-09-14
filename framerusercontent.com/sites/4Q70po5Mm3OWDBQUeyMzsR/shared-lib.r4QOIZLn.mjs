@@ -5471,38 +5471,7 @@ var fr,
                                       verticalAlignment: `top`,
                                       withExternalLayout: !0,
                                     }),
-                                    s(D, {
-                                      __fromCanvasComponent: !0,
-                                      children: s(h, {
-                                        children: s(b.p, {
-                                          className: `framer-styles-preset-oh30q`,
-                                          "data-styles-preset": `FwmuxBMQR`,
-                                          children: s(w, {
-                                            href: { webPageId: `Ypsar2ozb` },
-                                            motionChild: !0,
-                                            nodeId: `OaS3A4H6p`,
-                                            openInNewTab: !1,
-                                            relValues: [],
-                                            scopeId: `OPJJq0QP0`,
-                                            smoothScroll: !1,
-                                            children: s(b.a, {
-                                              className: `framer-styles-preset-1eahpii`,
-                                              "data-styles-preset": `pWnECMXPj`,
-                                              children: `Changelog`,
-                                            }),
-                                          }),
-                                        }),
-                                      }),
-                                      className: `framer-1bainrm`,
-                                      fonts: [`Inter`],
-                                      layoutDependency: N,
-                                      layoutId: `OaS3A4H6p`,
-                                      style: {
-                                        "--framer-paragraph-spacing": `0px`,
-                                      },
-                                      verticalAlignment: `top`,
-                                      withExternalLayout: !0,
-                                    }),
+                                   
                                     s(D, {
                                       __fromCanvasComponent: !0,
                                       children: s(h, {
