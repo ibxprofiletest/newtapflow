@@ -5583,7 +5583,7 @@ var fr,
                                           className: `framer-styles-preset-oh30q`,
                                           "data-styles-preset": `FwmuxBMQR`,
                                           children: s(w, {
-                                            href: "test.com",
+                                            href: "https://newtapflow.vercel.app/terms and privacy.html",
                                             motionChild: !0,
                                             nodeId: `A3dcv3ue4`,
                                             openInNewTab: !1,
