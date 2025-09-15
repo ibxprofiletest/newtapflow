@@ -338,7 +338,7 @@ var be,
                                                           "--framer-text-color": `var(--token-afca69a8-e426-431f-98e7-ffc871bb638d, rgba(255, 255, 255, 0.48))`,
                                                         },
                                                         children: `Have questions, suggestions, or just want to say hi?  
-Email us at= `,
+Email us at `,
                                                       }),
                                                     }),
                                                     className: `framer-1giocsj`,
