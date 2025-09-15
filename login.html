@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in or sign up | Tapflow</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://framerusercontent.com/images/WGcSfufeSAF5YUmMIQDthxsT8.png"
+      rel="icon"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        min-width: 100vw;
+        background: #111
+          url("https://framerusercontent.com/images/0QwQnQw8QwQnQwQnQwQnQwQnQwQnQwQn-800x800.png")
+          center center/cover no-repeat;
+        /* fallback: use a similar abstract bg */
+        background-blend-mode: multiply;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", Arial, sans-serif;
+        color: #222;
+        position: relative;
+      }
+      .login-container {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.18);
+        padding: 38px 32px 32px 32px;
+        width: 350px;
+        max-width: 92vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+      }
+      .login-logo {
+        background: #111;
+        border-radius: 16px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+      }
+      .login-logo img {
+        width: 38px;
+        height: 38px;
+        display: block;
+      }
+      .login-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 22px;
+        color: #111;
+        text-align: center;
+      }
+      .google-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 7px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #222;
+        padding: 8px 0;
+        width: 100%;
+        margin-bottom: 14px;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+        gap: 8px;
+      }
+      .google-btn img {
+        width: 22px;
+        height: 22px;
+      }
+      .divider {
+        width: 100%;
+        text-align: center;
+        color: #bbb;
+        font-size: 0.98rem;
+        margin: 10px 0 10px 0;
+        position: relative;
+      }
+      .divider:before,
+      .divider:after {
+        content: "";
+        display: inline-block;
+        width: 40%;
+        height: 1px;
+        background: #eee;
+        vertical-align: middle;
+        margin: 0 8px;
+      }
+      .login-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 7px;
+        border: 1px solid #e0e0e0;
+        background: #f5f5f5;
+        font-size: 1rem;
+        margin-bottom: 16px;
+        outline: none;
+        transition: border 0.2s;
+      }
+      .login-input:focus {
+        border: 1.5px solid #aaa;
+      }
+      .login-btn {
+        width: 100%;
+        background: #111;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        font-size: 1.08rem;
+        font-weight: 600;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .login-btn:hover {
+        background: #222;
+      }
+      .create-link {
+        color: #888;
+        font-size: 0.98rem;
+        text-align: center;
+        margin-top: 8px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .login-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 18px;
+        text-align: center;
+        color: #bbb;
+        font-size: 0.98rem;
+        z-index: 10;
+        letter-spacing: 0.01em;
+      }
+      .login-footer a {
+        color: #bbb;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+      @media (max-width: 500px) {
+        .login-container {
+          padding: 18px 4vw 18px 4vw;
+          width: 98vw;
+          margin-top: 18vw;
+        }
+        .login-footer {
+          font-size: 0.93rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-logo">
+        <svg
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium tapflow-css-xqm4t3"
+          focusable="false"
+          aria-hidden="true"
+          viewBox="0 0 37 37"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.95631 0.620928C16.3771 -0.206976 20.6229 -0.206976 28.0438 0.620928C32.3509 1.10146 35.828 4.48841 36.3345 8.81026C37.2218 16.384 37.2218 20.616 36.3345 28.1897C35.828 32.5115 32.3509 35.8986 28.0438 36.379C20.6229 37.207 16.3771 37.207 8.95631 36.379C4.64912 35.8986 1.17193 32.5115 0.665551 28.1897C-0.22185 20.616 -0.22185 16.384 0.665551 8.81026C1.17193 4.48841 4.64912 1.10146 8.95631 0.620928Z"
+            fill="#121212"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M19.8885 7.82422V12.5951H23.3838V18.1425H10.4943V12.5951H12.8353V8.89212L19.8885 7.82422ZM20.2961 29.0272C22.1269 29.0272 25.7837 28.4592 26.5057 28.123L24.9419 23.5846H21.0592C20.9172 23.5858 20.7764 23.5579 20.6456 23.5027C20.5147 23.4474 20.3966 23.3659 20.2985 23.2632L20.2948 23.2589C20.0243 22.9682 19.889 22.5627 19.889 22.0426V18.1427L12.8358 20.0276V22.1052C12.835 24.4127 13.4798 26.1432 14.7704 27.2968C16.061 28.4504 17.9028 29.0272 20.2961 29.0272Z"
+            fill="white"
+          ></path>
+        </svg>
+      </div>
+      <div class="login-title">Log in or sign up</div>
+      <button class="google-btn">
+        <img
+          src="https://www.svgrepo.com/show/475656/google-color.svg"
+          alt="Google logo"
+        />
+        Continue with Google
+      </button>
+      <div class="divider">or</div>
+      <input class="login-input" type="email" placeholder="Email" />
+      <button class="login-btn">Continue with code</button>
+      <div class="create-link">Create on Tapflow</div>
+    </div>
+    <div class="login-footer">
+      By continuing, you agree to <a href="#">terms</a> &amp;
+      <a href="#">privacy</a>
+    </div>
+  </body>
+</html>
