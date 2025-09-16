@@ -4477,12 +4477,7 @@ function Kn({ url: e, type: t, theme: n, style: r, ...i }) {
           target: `_blank`,
           style: { ...r, width: 250, height: 54 },
           ...i,
-          children: s(`img`, {
-            src: a,
-            alt: `Product Hunt Badge`,
-            width: `250`,
-            height: `54`,
-          }),
+          
         })
       : f(b.div, {
           style: { ...Vn, ...r },

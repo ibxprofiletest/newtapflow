@@ -886,7 +886,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                                                       variant: "LO7KZSQ24",
                                                       width: "100%",
                                                       zzdhFKk9U:
-                                                        "https://tapflow.co/auth/invite",
+                                                        "https://newtapflow.vercel.app/claim-invite.html",
                                                     }
                                                   ),
                                                 }
@@ -4035,7 +4035,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                                               "rgba(225, 199, 237, 0.96)",
                                           },
                                           children: /*#__PURE__*/ _jsx(Link, {
-                                            href: "https://tapflow.co/auth/invite",
+                                            href: "https://newtapflow.vercel.app/claim-invite.html",
                                             motionChild: true,
                                             nodeId: "SLbVqLUtu",
                                             openInNewTab: false,
@@ -4176,7 +4176,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                                           "rgba(225, 199, 237, 0.96)",
                                       },
                                       children: /*#__PURE__*/ _jsx(Link, {
-                                        href: "https://tapflow.co/auth/invite",
+                                        href: "https://newtapflow.vercel.app/claim-invite.html",
                                         motionChild: true,
                                         nodeId: "BxsLxnlOR",
                                         openInNewTab: false,
@@ -4311,7 +4311,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                                           "rgba(225, 199, 237, 0.96)",
                                       },
                                       children: /*#__PURE__*/ _jsx(Link, {
-                                        href: "https://tapflow.co/auth/invite",
+                                        href: "https://newtapflow.vercel.app/claim-invite.html",
                                         motionChild: true,
                                         nodeId: "qBkgYy8bR",
                                         openInNewTab: false,
