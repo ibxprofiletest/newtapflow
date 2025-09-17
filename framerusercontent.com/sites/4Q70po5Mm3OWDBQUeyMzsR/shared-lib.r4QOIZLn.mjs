@@ -2574,7 +2574,7 @@ var Bt,
                                 "--framer-text-color": `var(--extracted-r6o4lv, var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255)))`,
                               },
                               children: s(w, {
-                                href: `https://newtapflow.vercel.app/login.html`,
+                                href: `https://www.tapflow.gg/login.html`,
                                 motionChild: !0,
                                 nodeId: `PDE3PUf6l`,
                                 openInNewTab: !1,
@@ -2620,7 +2620,7 @@ var Bt,
                                       "--framer-text-color": `var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))`,
                                     },
                                     children: s(w, {
-                                      href: `https://newtapflow.vercel.app/login.html`,
+                                      href: `https://www.tapflow.gg/login.html`,
                                       motionChild: !0,
                                       nodeId: `PDE3PUf6l`,
                                       openInNewTab: !1,
@@ -2648,7 +2648,7 @@ var Bt,
                                       "--framer-text-color": `var(--extracted-r6o4lv, rgba(255, 255, 255, 0.6))`,
                                     },
                                     children: s(w, {
-                                      href: `https://newtapflow.vercel.app/login.html`,
+                                      href: `https://www.tapflow.gg/login.html`,
                                       motionChild: !0,
                                       nodeId: `PDE3PUf6l`,
                                       openInNewTab: !1,
@@ -4066,6 +4066,36 @@ var bn,
                               height: 28,
                               y:
                                 (u?.y || 0) +
+                                (0 + ((u?.height || 30) - 0 - 30) / 2) +
+                                0 +
+                                24,
+                              children: s(O, {
+                                className: `framer-7572t-container`,
+                                layoutDependency: H,
+                                layoutId: `qiJUYp81T-container`,
+                                nodeId: `qiJUYp81T`,
+                                rendersWithMotion: !0,
+                                scopeId: `nyDxmLt7o`,
+                                children: s(Z, {
+                                  height: `100%`,
+                                  id: `qiJUYp81T`,
+                                  Kr62I1Ee9: `https://www.tapflow.gg/login.html`,
+                                  layoutId: `qiJUYp81T`,
+                                  Mv16WKTEe: `Log in`,
+                                  NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
+                                  r9wjJW8ZN: !1,
+                                  style: { height: `100%` },
+                                  variant: `qZMGAGPE0`,
+                                  width: `100%`,
+                                  XiCzUhcM5: !1,
+                                  xkpUt4F21: `New`,
+                                }),
+                              }),
+                            }),
+                            s(x, {
+                              height: 28,
+                              y:
+                                (u?.y || 0) +
                                 (0 + ((u?.height || 52) - 0 - 52) / 2) +
                                 0 +
                                 12,
@@ -4079,7 +4109,7 @@ var bn,
                                 children: s(Z, {
                                   height: `100%`,
                                   id: `qiJUYp81T`,
-                                  Kr62I1Ee9: `https://newtapflow.vercel.app/login.html`,
+                                  Kr62I1Ee9: `https://www.tapflow.gg/login.html`,
                                   layoutId: `qiJUYp81T`,
                                   Mv16WKTEe: `Log in`,
                                   NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
@@ -4114,7 +4144,11 @@ var bn,
                                   Mv16WKTEe: `Coming Soon`,
                                   NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
                                   r9wjJW8ZN: !1,
-                                  style: { height: `100%`, cursor : 'not-allowed', pointerEvents: 'none' },
+                                  style: {
+                                    height: `100%`,
+                                    cursor: "not-allowed",
+                                    pointerEvents: "none",
+                                  },
                                   variant: `symjmldSc`,
                                   width: `100%`,
                                   XiCzUhcM5: !1,
@@ -4184,7 +4218,7 @@ var bn,
                         }),
                       le() &&
                         s(w, {
-                          href: `https://newtapflow.vercel.app/login.html`,
+                          href: `https://www.tapflow.gg/login.html`,
                           motionChild: !0,
                           nodeId: `gWLa5ExkS`,
                           openInNewTab: ee,
@@ -4477,7 +4511,6 @@ function Kn({ url: e, type: t, theme: n, style: r, ...i }) {
           target: `_blank`,
           style: { ...r, width: 250, height: 54 },
           ...i,
-          
         })
       : f(b.div, {
           style: { ...Vn, ...r },
@@ -5466,7 +5499,7 @@ var fr,
                                       verticalAlignment: `top`,
                                       withExternalLayout: !0,
                                     }),
-                                   
+
                                     s(D, {
                                       __fromCanvasComponent: !0,
                                       children: s(h, {
@@ -5501,7 +5534,7 @@ var fr,
                                     }),
                                   ],
                                 }),
-                                
+
                                 f(b.div, {
                                   className: `framer-it8err`,
                                   "data-framer-name": `Legal`,
@@ -5515,7 +5548,7 @@ var fr,
                                           className: `framer-styles-preset-oh30q`,
                                           "data-styles-preset": `FwmuxBMQR`,
                                           children: s(w, {
-                                            href: "https://newtapflow.vercel.app/roadmap.html",
+                                            href: "https://www.tapflow.gg/roadmap.html",
                                             motionChild: !0,
                                             nodeId: `uTd820ROK`,
                                             openInNewTab: !1,
@@ -5547,7 +5580,7 @@ var fr,
                                           className: `framer-styles-preset-oh30q`,
                                           "data-styles-preset": `FwmuxBMQR`,
                                           children: s(w, {
-                                            href: "https://newtapflow.vercel.app/terms and privacy.html",
+                                            href: "https://www.tapflow.gg/terms and privacy.html",
                                             motionChild: !0,
                                             nodeId: `A3dcv3ue4`,
                                             openInNewTab: !1,

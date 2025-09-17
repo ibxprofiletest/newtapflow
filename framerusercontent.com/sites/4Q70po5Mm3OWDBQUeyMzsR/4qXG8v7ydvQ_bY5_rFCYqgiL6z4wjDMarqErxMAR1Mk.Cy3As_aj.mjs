@@ -2205,7 +2205,7 @@ var St,
                                                   layoutId: `FCKT0U8ty`,
                                                   variant: `LO7KZSQ24`,
                                                   width: `100%`,
-                                                  zzdhFKk9U: `https://newtapflow.vercel.app/claim-invite.html`,
+                                                  zzdhFKk9U: `https://www.tapflow.gg/claim-invite.html`,
                                                 }),
                                               }),
                                             }),
@@ -2416,7 +2416,7 @@ var St,
                                               "data-framer-name": `Product card`,
                                               children: [
                                                 o(S, {
-                                                  href: `https://tapflow.co/p/marketing-for-founders-Wp3TBCckIS`,
+                                                  href: ``,
                                                   motionChild: !0,
                                                   nodeId: `TPbSPBNSo`,
                                                   openInNewTab: !0,
@@ -2768,7 +2768,7 @@ var St,
                                                       className: `framer-1m3ltk1`,
                                                       "data-framer-name": `Avatar`,
                                                       children: o(S, {
-                                                        href: `https://tapflow.co/paulmit`,
+                                                        href: ``,
                                                         motionChild: !0,
                                                         nodeId: `I3224:4719;190:1539`,
                                                         openInNewTab: !0,
@@ -2930,7 +2930,7 @@ var St,
                                                                       "data-styles-preset": `v0rffxM9f`,
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/p/marketing-for-founders-Wp3TBCckIS`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `p0_22CAJC`,
@@ -2974,7 +2974,7 @@ var St,
                                                                       },
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/p/marketing-for-founders-Wp3TBCckIS`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `p0_22CAJC`,
@@ -3019,7 +3019,7 @@ var St,
                                                                     children: o(
                                                                       S,
                                                                       {
-                                                                        href: `https://tapflow.co/p/marketing-for-founders-Wp3TBCckIS`,
+                                                                        href: ``,
                                                                         motionChild:
                                                                           !0,
                                                                         nodeId: `p0_22CAJC`,
@@ -3072,7 +3072,7 @@ var St,
                                                                       },
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/paulmit`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `YhMHOSXgO`,
@@ -3116,7 +3116,7 @@ var St,
                                                                     children: o(
                                                                       S,
                                                                       {
-                                                                        href: `https://tapflow.co/paulmit`,
+                                                                        href: ``,
                                                                         motionChild:
                                                                           !0,
                                                                         nodeId: `YhMHOSXgO`,
@@ -3163,7 +3163,7 @@ var St,
                                               "data-framer-name": `Product card`,
                                               children: [
                                                 o(S, {
-                                                  href: `https://tapflow.co/p/critical-thinking-bjtLBkm9x4`,
+                                                  href: ``,
                                                   motionChild: !0,
                                                   nodeId: `r22A8eL9I`,
                                                   openInNewTab: !0,
@@ -3515,7 +3515,7 @@ var St,
                                                       className: `framer-409xwg`,
                                                       "data-framer-name": `Avatar`,
                                                       children: o(S, {
-                                                        href: `https://tapflow.co/joan`,
+                                                        href: ``,
                                                         motionChild: !0,
                                                         nodeId: `I3224:4763;190:1539`,
                                                         openInNewTab: !0,
@@ -3677,7 +3677,7 @@ var St,
                                                                       "data-styles-preset": `v0rffxM9f`,
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/p/critical-thinking-bjtLBkm9x4`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `S4YUUoHDm`,
@@ -3721,7 +3721,7 @@ var St,
                                                                       },
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/p/critical-thinking-bjtLBkm9x4`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `S4YUUoHDm`,
@@ -3766,7 +3766,7 @@ var St,
                                                                     children: o(
                                                                       S,
                                                                       {
-                                                                        href: `https://tapflow.co/p/critical-thinking-bjtLBkm9x4`,
+                                                                        href: ``,
                                                                         motionChild:
                                                                           !0,
                                                                         nodeId: `S4YUUoHDm`,
@@ -3819,7 +3819,7 @@ var St,
                                                                       },
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/joan`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `YX0lS2AGX`,
@@ -3863,7 +3863,7 @@ var St,
                                                                     children: o(
                                                                       S,
                                                                       {
-                                                                        href: `https://tapflow.co/joan`,
+                                                                        href: ``,
                                                                         motionChild:
                                                                           !0,
                                                                         nodeId: `YX0lS2AGX`,
@@ -3910,7 +3910,7 @@ var St,
                                               "data-framer-name": `Product card`,
                                               children: [
                                                 o(S, {
-                                                  href: `https://tapflow.co/p/du-b2-au-c1-4ebMhTxqJi`,
+                                                  href: ``,
                                                   motionChild: !0,
                                                   nodeId: `ylpSeL0mI`,
                                                   openInNewTab: !0,
@@ -4262,7 +4262,7 @@ var St,
                                                       className: `framer-ojgzlt`,
                                                       "data-framer-name": `Avatar`,
                                                       children: o(S, {
-                                                        href: `https://tapflow.co/frenchschooltv`,
+                                                        href: ``,
                                                         motionChild: !0,
                                                         nodeId: `I3224:4794;190:1539`,
                                                         openInNewTab: !0,
@@ -4432,7 +4432,7 @@ var St,
                                                                       "data-styles-preset": `v0rffxM9f`,
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/p/du-b2-au-c1-4ebMhTxqJi`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `sey0e6ei1`,
@@ -4476,7 +4476,7 @@ var St,
                                                                       },
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/p/du-b2-au-c1-4ebMhTxqJi`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `sey0e6ei1`,
@@ -4521,7 +4521,7 @@ var St,
                                                                     children: o(
                                                                       S,
                                                                       {
-                                                                        href: `https://tapflow.co/p/du-b2-au-c1-4ebMhTxqJi`,
+                                                                        href: ``,
                                                                         motionChild:
                                                                           !0,
                                                                         nodeId: `sey0e6ei1`,
@@ -4574,7 +4574,7 @@ var St,
                                                                       },
                                                                       children:
                                                                         o(S, {
-                                                                          href: `https://tapflow.co/frenchschooltv`,
+                                                                          href: ``,
                                                                           motionChild:
                                                                             !0,
                                                                           nodeId: `EzFYKmmNA`,
@@ -4618,7 +4618,7 @@ var St,
                                                                     children: o(
                                                                       S,
                                                                       {
-                                                                        href: `https://tapflow.co/frenchschooltv`,
+                                                                        href: ``,
                                                                         motionChild:
                                                                           !0,
                                                                         nodeId: `EzFYKmmNA`,
@@ -4753,7 +4753,7 @@ var St,
                                                   "--framer-text-color": `rgba(225, 199, 237, 0.96)`,
                                                 },
                                                 children: o(S, {
-                                                  href: `https://newtapflow.vercel.app/claim-invite.html`,
+                                                  href: `https://www.tapflow.gg/claim-invite.html`,
                                                   motionChild: !0,
                                                   nodeId: `SLbVqLUtu`,
                                                   openInNewTab: !1,
@@ -4871,7 +4871,7 @@ var St,
                                                 "--framer-text-color": `rgba(225, 199, 237, 0.96)`,
                                               },
                                               children: o(S, {
-                                                href: `https://newtapflow.vercel.app/claim-invite.html`,
+                                                href: `https://www.tapflow.gg/claim-invite.html`,
                                                 motionChild: !0,
                                                 nodeId: `BxsLxnlOR`,
                                                 openInNewTab: !1,
@@ -4988,7 +4988,7 @@ var St,
                                                 "--framer-text-color": `rgba(225, 199, 237, 0.96)`,
                                               },
                                               children: o(S, {
-                                                href: `https://newtapflow.vercel.app/claim-invite.html`,
+                                                href: `https://www.tapflow.gg/claim-invite.html`,
                                                 motionChild: !0,
                                                 nodeId: `qBkgYy8bR`,
                                                 openInNewTab: !1,
