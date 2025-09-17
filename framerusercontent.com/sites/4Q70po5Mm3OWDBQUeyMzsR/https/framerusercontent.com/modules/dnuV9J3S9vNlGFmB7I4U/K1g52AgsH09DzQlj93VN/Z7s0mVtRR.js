@@ -1059,7 +1059,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                                             "--framer-text-color":
                                               "var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255))",
                                           },
-                                          children: "Recently launched",
+                                          children: "Launching Soon",
                                         }),
                                       }
                                     ),
@@ -1083,7 +1083,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                                             "--framer-text-color":
                                               "var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255))",
                                           },
-                                          children: "Recently launched",
+                                          children: "Launching Soon",
                                         }),
                                       }
                                     ),
