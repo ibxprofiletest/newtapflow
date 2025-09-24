@@ -5912,15 +5912,25 @@ var fr,
                     children: s(D, {
                       __fromCanvasComponent: !0,
                       children: s(h, {
-                        children: s(b.p, {
+                        children: [s(b.p, {
+                          className: `framer-text`,
+                          "data-styles-preset": `FwmuxBMQR`,
+                          style: {
+                            "--framer-text-alignment": `center`,
+                            "--framer-text-color": `var(--extracted-r6o4lv, var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255)))`,
+                          },
+                          children: ` hello@tapflow.gg`,
+                        }),
+                        s(b.p, {
                           className: `framer-styles-preset-oh30q`,
                           "data-styles-preset": `FwmuxBMQR`,
                           style: {
                             "--framer-text-alignment": `center`,
                             "--framer-text-color": `var(--extracted-r6o4lv, var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255)))`,
                           },
-                          children: `Tapflow © 2025 — Knowledge, thoughtfully made - hello@tapflow.gg`,
-                        }),
+                          children: `Tapflow © 2025 — Knowledge, thoughtfully made`,
+                        })
+                      ],
                       }),
                       className: `framer-1iuyfoc`,
                       "data-framer-name": `Sign up now for TOP SECRET\xA0news`,
