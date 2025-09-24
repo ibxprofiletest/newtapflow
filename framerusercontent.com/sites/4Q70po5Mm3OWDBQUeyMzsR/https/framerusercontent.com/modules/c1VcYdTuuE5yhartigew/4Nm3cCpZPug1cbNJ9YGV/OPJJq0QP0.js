@@ -666,7 +666,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                         "var(--extracted-r6o4lv, var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255)))",
                     },
                     children:
-                      "Tapflow \xa9 2025 — Knowledge, thoughtfully made.",
+                      "Tapflow \xa9 2025 — Knowledge, thoughtfully made - hello@tapflow.gg",
                   }),
                 }),
                 className: "framer-1iuyfoc",
