@@ -4186,6 +4186,39 @@ var bn,
                           layoutId: `ClfRKToaZ`,
                           children: [
                             
+                            
+                            
+                            s(x, {
+                              height: 28,
+                              y:
+                                (u?.y || 0) +
+                                (0 + ((u?.height || 52) - 0 - 52) / 2) +
+                                0 +
+                                12,
+                              children: s(O, {
+                                className: `framer-1derri5-container`,
+                                layoutDependency: H,
+                                layoutId: `zOcXcQqG7-container`,
+                                nodeId: `zOcXcQqG7`,
+                                rendersWithMotion: !0,
+                                scopeId: `nyDxmLt7o`,
+                                children: s(Z, {
+                                  height: `100%`,
+                                  id: `zOcXcQqG7`,
+                                  Kr62I1Ee9: ``,
+                                  layoutId: `zOcXcQqG7`,
+                                  Mv16WKTEe: `CA: COMING SOON`,
+                                  NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
+                                  r9wjJW8ZN: !1,
+                                  style: { height: `100%`, cursor : 'not-allowed', pointerEvents: 'none', marginRight: '15px' },
+                                  variant: `symjmldSc`,
+                                  width: `100%`,
+                                  XiCzUhcM5: !1,
+                                  xkpUt4F21: `New`,
+                                }),
+                              }),
+                            }),
+                            
                             s(x, {
                               height: 28,
                               y:
@@ -4215,38 +4248,6 @@ var bn,
                                 }),
                               }),
                             }),
-                            
-                            s(x, {
-                              height: 28,
-                              y:
-                                (u?.y || 0) +
-                                (0 + ((u?.height || 52) - 0 - 52) / 2) +
-                                0 +
-                                12,
-                              children: s(O, {
-                                className: `framer-1derri5-container`,
-                                layoutDependency: H,
-                                layoutId: `zOcXcQqG7-container`,
-                                nodeId: `zOcXcQqG7`,
-                                rendersWithMotion: !0,
-                                scopeId: `nyDxmLt7o`,
-                                children: s(Z, {
-                                  height: `100%`,
-                                  id: `zOcXcQqG7`,
-                                  Kr62I1Ee9: ``,
-                                  layoutId: `zOcXcQqG7`,
-                                  Mv16WKTEe: `CA: COMING SOON`,
-                                  NctncU19N: `var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63))`,
-                                  r9wjJW8ZN: !1,
-                                  style: { height: `100%`, cursor : 'not-allowed', pointerEvents: 'none' },
-                                  variant: `symjmldSc`,
-                                  width: `100%`,
-                                  XiCzUhcM5: !1,
-                                  xkpUt4F21: `New`,
-                                }),
-                              }),
-                            }),
-                            
                             
                           ],
                         }),
