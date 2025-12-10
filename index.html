@@ -13113,18 +13113,27 @@
       function setupComingSoonButton() {
         if (comingSoonButtonHandlerAdded) return;
         
-        // Try to find button by ID first
+        // Try to find button by ID first (most reliable method)
         let comingSoonButton = document.getElementById('zOcXcQqG7');
         
-        // If not found, try to find by text content in various containers
+        // If not found by ID, try alternative selectors
+        if (!comingSoonButton) {
+          // Try by ID selector with contains
+          comingSoonButton = document.querySelector('[id*="zOcXcQqG7"]');
+        }
+        
         if (!comingSoonButton) {
           // Search in the Right container area
           const containers = document.querySelectorAll('[data-framer-name="Right"], [class*="framer-112u9ki"]');
           for (let container of containers) {
+            comingSoonButton = container.querySelector('[id*="zOcXcQqG7"]');
+            if (comingSoonButton) break;
+            
+            // Fallback: find by text content that starts with "CA:"
             const allElements = container.querySelectorAll('*');
             for (let el of allElements) {
               const text = (el.textContent || el.innerText || '').trim();
-              if (text === 'CA: Coming Soon' || text === 'Coming Soon') {
+              if (text.startsWith('CA:') || text.includes('Coming Soon')) {
                 // Find the clickable parent (button, div with role, or link)
                 let parent = el;
                 while (parent && parent !== container) {
@@ -13145,18 +13154,6 @@
           }
         }
         
-        // Alternative: find by searching all clickable elements
-        if (!comingSoonButton) {
-          const clickableElements = document.querySelectorAll('[id*="zOcXcQqG7"], button, [role="button"], a[href=""]');
-          for (let el of clickableElements) {
-            const text = (el.textContent || el.innerText || '').trim();
-            if (text.includes('Coming Soon') || text === 'CA: Coming Soon') {
-              comingSoonButton = el;
-              break;
-            }
-          }
-        }
-        
         if (comingSoonButton && !comingSoonButton.dataset.comingSoonHandler) {
           comingSoonButton.dataset.comingSoonHandler = 'true';
           comingSoonButtonHandlerAdded = true;
@@ -13168,24 +13165,37 @@
             // Store original text by finding the text node
             let textElement = comingSoonButton;
             const possibleTextElements = comingSoonButton.querySelectorAll('span, p, div, [class*="framer-text"]');
+            
+            // Find the element that contains the actual text
             for (let el of possibleTextElements) {
               const text = (el.textContent || el.innerText || '').trim();
-              if (text.includes('Coming Soon')) {
+              if (text.startsWith('CA:') || text.length > 10) {
                 textElement = el;
                 break;
               }
             }
             
-            const originalText = textElement.textContent || textElement.innerText || 'CA: Coming Soon';
+            // Get the original text
+            const originalText = textElement.textContent || textElement.innerText || comingSoonButton.textContent || comingSoonButton.innerText;
             
             // Change to "Copied"
-            textElement.textContent = 'Copied';
-            textElement.innerText = 'Copied';
+            if (textElement !== comingSoonButton) {
+              textElement.textContent = 'Copied';
+              textElement.innerText = 'Copied';
+            } else {
+              comingSoonButton.textContent = 'Copied';
+              comingSoonButton.innerText = 'Copied';
+            }
             
             // Revert after 2 seconds
             setTimeout(function() {
-              textElement.textContent = originalText;
-              textElement.innerText = originalText;
+              if (textElement !== comingSoonButton) {
+                textElement.textContent = originalText;
+                textElement.innerText = originalText;
+              } else {
+                comingSoonButton.textContent = originalText;
+                comingSoonButton.innerText = originalText;
+              }
             }, 2000);
           });
         }
