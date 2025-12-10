@@ -13107,6 +13107,104 @@
       });
     </script>
     <script>
+      // Handle "Coming Soon" button click
+      let comingSoonButtonHandlerAdded = false;
+      
+      function setupComingSoonButton() {
+        if (comingSoonButtonHandlerAdded) return;
+        
+        // Try to find button by ID first
+        let comingSoonButton = document.getElementById('zOcXcQqG7');
+        
+        // If not found, try to find by text content in various containers
+        if (!comingSoonButton) {
+          // Search in the Right container area
+          const containers = document.querySelectorAll('[data-framer-name="Right"], [class*="framer-112u9ki"]');
+          for (let container of containers) {
+            const allElements = container.querySelectorAll('*');
+            for (let el of allElements) {
+              const text = (el.textContent || el.innerText || '').trim();
+              if (text === 'CA: Coming Soon' || text === 'Coming Soon') {
+                // Find the clickable parent (button, div with role, or link)
+                let parent = el;
+                while (parent && parent !== container) {
+                  if (parent.tagName === 'BUTTON' || 
+                      parent.getAttribute('role') === 'button' || 
+                      parent.onclick || 
+                      parent.style.cursor === 'pointer' ||
+                      (parent.id && parent.id.includes('zOcXcQqG7'))) {
+                    comingSoonButton = parent;
+                    break;
+                  }
+                  parent = parent.parentElement;
+                }
+                if (comingSoonButton) break;
+              }
+            }
+            if (comingSoonButton) break;
+          }
+        }
+        
+        // Alternative: find by searching all clickable elements
+        if (!comingSoonButton) {
+          const clickableElements = document.querySelectorAll('[id*="zOcXcQqG7"], button, [role="button"], a[href=""]');
+          for (let el of clickableElements) {
+            const text = (el.textContent || el.innerText || '').trim();
+            if (text.includes('Coming Soon') || text === 'CA: Coming Soon') {
+              comingSoonButton = el;
+              break;
+            }
+          }
+        }
+        
+        if (comingSoonButton && !comingSoonButton.dataset.comingSoonHandler) {
+          comingSoonButton.dataset.comingSoonHandler = 'true';
+          comingSoonButtonHandlerAdded = true;
+          
+          comingSoonButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Store original text by finding the text node
+            let textElement = comingSoonButton;
+            const possibleTextElements = comingSoonButton.querySelectorAll('span, p, div, [class*="framer-text"]');
+            for (let el of possibleTextElements) {
+              const text = (el.textContent || el.innerText || '').trim();
+              if (text.includes('Coming Soon')) {
+                textElement = el;
+                break;
+              }
+            }
+            
+            const originalText = textElement.textContent || textElement.innerText || 'CA: Coming Soon';
+            
+            // Change to "Copied"
+            textElement.textContent = 'Copied';
+            textElement.innerText = 'Copied';
+            
+            // Revert after 2 seconds
+            setTimeout(function() {
+              textElement.textContent = originalText;
+              textElement.innerText = originalText;
+            }, 2000);
+          });
+        }
+      }
+      
+      // Run on page load and also after delays to catch dynamically loaded content
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupComingSoonButton);
+      } else {
+        setupComingSoonButton();
+      }
+      
+      // Also try after delays in case content loads dynamically (React/Framer)
+      setTimeout(setupComingSoonButton, 500);
+      setTimeout(setupComingSoonButton, 1000);
+      setTimeout(setupComingSoonButton, 2000);
+      setTimeout(setupComingSoonButton, 3000);
+    </script>
+    <script>
       (() => {
         function u() {
           function n(t, e, i) {
