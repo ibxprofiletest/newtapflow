@@ -13106,55 +13106,205 @@
         alert("Thank you for subscribing!");
       });
     </script>
+    <style>
+      .tapflow-pumpfun-text {
+        color: var(--token-cd78f7ae-9245-431a-9c41-e6abcbb80403, rgb(255, 255, 255));
+        font-family: Inter, Inter Placeholder, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 12px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+      .ca-copy-button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 4px 8px;
+        margin-left: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--token-302b6139-62bf-4a65-a11c-00b7552c4831, rgb(255, 61, 63));
+        transition: opacity 0.2s;
+      }
+      .ca-copy-button:hover {
+        opacity: 0.8;
+      }
+      .ca-copy-button svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
+    </style>
     <script>
-      // Handle "Coming Soon" button click
+      // Handle "Coming Soon" button click and add pumpfun text + copy button
       let comingSoonButtonHandlerAdded = false;
+      let pumpfunTextAdded = false;
+      
+      function extractCAValue(text) {
+        // Extract CA value from text like "CA: [address]" or just the address
+        if (!text) return null;
+        const trimmed = text.trim();
+        if (trimmed.startsWith('CA:')) {
+          const parts = trimmed.split(':');
+          if (parts.length > 1) {
+            return parts.slice(1).join(':').trim();
+          }
+        }
+        // If it's not "Coming Soon", assume it's the CA value
+        if (trimmed !== 'Coming Soon' && trimmed.length > 10) {
+          return trimmed;
+        }
+        return null;
+      }
+      
+      function copyToClipboard(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          return navigator.clipboard.writeText(text).then(() => true).catch(() => false);
+        } else {
+          // Fallback for older browsers
+          const textArea = document.createElement('textarea');
+          textArea.value = text;
+          textArea.style.position = 'fixed';
+          textArea.style.opacity = '0';
+          document.body.appendChild(textArea);
+          textArea.select();
+          try {
+            const successful = document.execCommand('copy');
+            document.body.removeChild(textArea);
+            return Promise.resolve(successful);
+          } catch (err) {
+            document.body.removeChild(textArea);
+            return Promise.resolve(false);
+          }
+        }
+      }
       
       function setupComingSoonButton() {
-        if (comingSoonButtonHandlerAdded) return;
+        // Find the container
+        const containers = document.querySelectorAll('[data-framer-name="Right"], [class*="framer-112u9ki"]');
+        let container = null;
+        let comingSoonButton = null;
         
-        // Try to find button by ID first (most reliable method)
-        let comingSoonButton = document.getElementById('zOcXcQqG7');
-        
-        // If not found by ID, try alternative selectors
-        if (!comingSoonButton) {
-          // Try by ID selector with contains
-          comingSoonButton = document.querySelector('[id*="zOcXcQqG7"]');
+        for (let cont of containers) {
+          comingSoonButton = document.getElementById('zOcXcQqG7') || cont.querySelector('[id*="zOcXcQqG7"]');
+          if (comingSoonButton) {
+            container = cont;
+            break;
+          }
+          
+          // Fallback: find by text content
+          const allElements = cont.querySelectorAll('*');
+          for (let el of allElements) {
+            const text = (el.textContent || el.innerText || '').trim();
+            if (text.startsWith('CA:') || text.includes('Coming Soon')) {
+              let parent = el;
+              while (parent && parent !== cont) {
+                if (parent.tagName === 'BUTTON' || 
+                    parent.getAttribute('role') === 'button' || 
+                    parent.onclick || 
+                    parent.style.cursor === 'pointer' ||
+                    (parent.id && parent.id.includes('zOcXcQqG7'))) {
+                  comingSoonButton = parent;
+                  container = cont;
+                  break;
+                }
+                parent = parent.parentElement;
+              }
+              if (comingSoonButton) break;
+            }
+          }
+          if (comingSoonButton) break;
         }
         
-        if (!comingSoonButton) {
-          // Search in the Right container area
-          const containers = document.querySelectorAll('[data-framer-name="Right"], [class*="framer-112u9ki"]');
-          for (let container of containers) {
-            comingSoonButton = container.querySelector('[id*="zOcXcQqG7"]');
-            if (comingSoonButton) break;
-            
-            // Fallback: find by text content that starts with "CA:"
-            const allElements = container.querySelectorAll('*');
-            for (let el of allElements) {
-              const text = (el.textContent || el.innerText || '').trim();
-              if (text.startsWith('CA:') || text.includes('Coming Soon')) {
-                // Find the clickable parent (button, div with role, or link)
-                let parent = el;
-                while (parent && parent !== container) {
-                  if (parent.tagName === 'BUTTON' || 
-                      parent.getAttribute('role') === 'button' || 
-                      parent.onclick || 
-                      parent.style.cursor === 'pointer' ||
-                      (parent.id && parent.id.includes('zOcXcQqG7'))) {
-                    comingSoonButton = parent;
-                    break;
-                  }
-                  parent = parent.parentElement;
-                }
-                if (comingSoonButton) break;
-              }
-            }
-            if (comingSoonButton) break;
+        if (!container || !comingSoonButton) return;
+        
+        // Add pumpfun text before the button (only once)
+        if (!pumpfunTextAdded && !container.querySelector('.tapflow-pumpfun-text')) {
+          const pumpfunText = document.createElement('span');
+          pumpfunText.className = 'tapflow-pumpfun-text';
+          pumpfunText.textContent = '$TAPFLOW is live on pumpfun!';
+          
+          // Insert before the button's parent container
+          const buttonParent = comingSoonButton.closest('[class*="framer-1derri5-container"]') || comingSoonButton.parentElement;
+          if (buttonParent && buttonParent.parentElement) {
+            buttonParent.parentElement.insertBefore(pumpfunText, buttonParent);
+            pumpfunTextAdded = true;
           }
         }
         
-        if (comingSoonButton && !comingSoonButton.dataset.comingSoonHandler) {
+        // Add copy button next to CA button (only once)
+        if (!comingSoonButton.dataset.copyButtonAdded) {
+          comingSoonButton.dataset.copyButtonAdded = 'true';
+          
+          // Check if copy button already exists in the container
+          if (!container.querySelector('.ca-copy-button')) {
+            const copyButton = document.createElement('button');
+            copyButton.className = 'ca-copy-button';
+            copyButton.setAttribute('aria-label', 'Copy CA address');
+            copyButton.innerHTML = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>';
+            
+            copyButton.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              
+              // Find the text element containing CA value
+              let textElement = comingSoonButton;
+              const possibleTextElements = comingSoonButton.querySelectorAll('span, p, div, [class*="framer-text"]');
+              
+              for (let el of possibleTextElements) {
+                const text = (el.textContent || el.innerText || '').trim();
+                if (text.startsWith('CA:') || (text.length > 10 && text !== 'Coming Soon')) {
+                  textElement = el;
+                  break;
+                }
+              }
+              
+              const buttonText = textElement.textContent || textElement.innerText || comingSoonButton.textContent || comingSoonButton.innerText;
+              const caValue = extractCAValue(buttonText);
+              
+              if (caValue) {
+                copyToClipboard(caValue).then(success => {
+                  if (success) {
+                    // Show feedback
+                    const originalText = buttonText;
+                    if (textElement !== comingSoonButton) {
+                      textElement.textContent = 'Copied!';
+                      textElement.innerText = 'Copied!';
+                    } else {
+                      comingSoonButton.textContent = 'Copied!';
+                      comingSoonButton.innerText = 'Copied!';
+                    }
+                    
+                    setTimeout(function() {
+                      if (textElement !== comingSoonButton) {
+                        textElement.textContent = originalText;
+                        textElement.innerText = originalText;
+                      } else {
+                        comingSoonButton.textContent = originalText;
+                        comingSoonButton.innerText = originalText;
+                      }
+                    }, 2000);
+                  }
+                });
+              }
+            });
+            
+            // Insert copy button in the container, right after the CA button's parent container
+            const buttonContainer = comingSoonButton.closest('[class*="framer-1derri5-container"]') || comingSoonButton.parentElement;
+            if (buttonContainer && buttonContainer.parentElement) {
+              buttonContainer.parentElement.insertBefore(copyButton, buttonContainer.nextSibling);
+            } else if (container) {
+              // Fallback: insert in the main container
+              container.appendChild(copyButton);
+            }
+          }
+        }
+        
+        // Handle CA button click (for copying)
+        if (!comingSoonButton.dataset.comingSoonHandler) {
           comingSoonButton.dataset.comingSoonHandler = 'true';
           comingSoonButtonHandlerAdded = true;
           
@@ -13162,41 +13312,45 @@
             e.preventDefault();
             e.stopPropagation();
             
-            // Store original text by finding the text node
+            // Find the text element containing CA value
             let textElement = comingSoonButton;
             const possibleTextElements = comingSoonButton.querySelectorAll('span, p, div, [class*="framer-text"]');
             
-            // Find the element that contains the actual text
             for (let el of possibleTextElements) {
               const text = (el.textContent || el.innerText || '').trim();
-              if (text.startsWith('CA:') || text.length > 10) {
+              if (text.startsWith('CA:') || (text.length > 10 && text !== 'Coming Soon')) {
                 textElement = el;
                 break;
               }
             }
             
-            // Get the original text
-            const originalText = textElement.textContent || textElement.innerText || comingSoonButton.textContent || comingSoonButton.innerText;
+            const buttonText = textElement.textContent || textElement.innerText || comingSoonButton.textContent || comingSoonButton.innerText;
+            const caValue = extractCAValue(buttonText);
             
-            // Change to "Copied"
-            if (textElement !== comingSoonButton) {
-              textElement.textContent = 'Copied';
-              textElement.innerText = 'Copied';
-            } else {
-              comingSoonButton.textContent = 'Copied';
-              comingSoonButton.innerText = 'Copied';
+            if (caValue) {
+              copyToClipboard(caValue).then(success => {
+                if (success) {
+                  const originalText = buttonText;
+                  if (textElement !== comingSoonButton) {
+                    textElement.textContent = 'Copied!';
+                    textElement.innerText = 'Copied!';
+                  } else {
+                    comingSoonButton.textContent = 'Copied!';
+                    comingSoonButton.innerText = 'Copied!';
+                  }
+                  
+                  setTimeout(function() {
+                    if (textElement !== comingSoonButton) {
+                      textElement.textContent = originalText;
+                      textElement.innerText = originalText;
+                    } else {
+                      comingSoonButton.textContent = originalText;
+                      comingSoonButton.innerText = originalText;
+                    }
+                  }, 2000);
+                }
+              });
             }
-            
-            // Revert after 2 seconds
-            setTimeout(function() {
-              if (textElement !== comingSoonButton) {
-                textElement.textContent = originalText;
-                textElement.innerText = originalText;
-              } else {
-                comingSoonButton.textContent = originalText;
-                comingSoonButton.innerText = originalText;
-              }
-            }, 2000);
           });
         }
       }
